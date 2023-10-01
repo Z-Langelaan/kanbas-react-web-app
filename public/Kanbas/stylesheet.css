@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav.nav-item{
+    display:flex;
+    align-items: center;
+}
+
+
+.nav.first.flex-column .nav-link {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-left: 0;
+    font-size: 13px;
+    padding-right: 0;
+}
+
+.nav.first.flex-column .nav-link.active {
+    background-color: white;
+    color: red;
+    padding-left: 0;
+    font-size: 13px;
+    padding-right: 0;
+}
+
+.nav.second.flex-column{
+    background-color: white !important;
+}
+/* Style for the second list */
+.nav.second.flex-column .nav-link {
+    background-color: white;
+    color: red;
+    text-align: left;
+    font-size: 13px;
+}
+
+.nav.second.flex-column .nav-link.active {
+    background-color: white;
+    color: black;
+    border-left: 2px solid black; /* Add a black border to the left */
+    padding-left: 10px; /* Adjust padding for spacing */
+    font-size: 13px;
+}
+
+.fa{
+    color:red;
+    background-color: black;
+    font-size:20px;
+    padding-top:10px;
+    text-align: center;
+}
+.fa.active{
+    background-color: white;
+}
+
+.fa-pencil-square-o{
+    color:black;
+    background-color: white;
+}
+
+.fa.fa-user-circle-o{
+    color:grey;
+}
+
+.navbar.bg-light{
+    display:block;
+    width:85px;
+    box-sizing: unset;
+    padding:0 0 0 0;
+    height:100%;
+    background-color: black !important;
+}
+
+
+.col{
+    padding:0 0 0 0;
+}
