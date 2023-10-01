@@ -11,7 +11,7 @@
         <div class="col">
             <nav class ="navbar bg-light">
                 <ul class="nav first flex-column">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2V8BuW7n0uy8uY8krUGiY5bXk0LN8RZe4cw&usqp=CAU" style="width:128px;height:128px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2V8BuW7n0uy8uY8krUGiY5bXk0LN8RZe4cw&usqp=CAU" style="width:85px;height:85px;">
                     <i class="fa fa-user-circle-o active" aria-hidden="true"></i>
                     <li class="nav-item"><a class="nav-link active" href="/Kanbas/Account/Profile/index.html">Account</a></li>
                     <i class="fa fa-tasks" aria-hidden="true"></i>
@@ -33,67 +33,73 @@
                 </ul>
             </nav>
         </div>
-        <div class="col">
-            <nav class ="navbar">
-                <ul class="nav second flex-column">
-                    <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Files</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ePortfolios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Shared Content</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">The Hub</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Qwickly Course Tools</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Global Announcements</a></li>
-                </ul>
-            </nav>
+        <div class="col-11">
+            <h1><i class="fa fa-bars" aria-hidden="true"></i> Jose Annunziato's Profile</h1> <hr>
+            <div class="row">
+                <div class="col">
+                    <nav class ="navbar">
+                        <ul class="nav second flex-column">
+                            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Files</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">ePortfolios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Shared Content</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">The Hub</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Qwickly Course Tools</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Global Announcements</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-9">
+                    <h1>Jose Annunziato</h1>
+                    <label for="text-fields-last-name">Name:*</label></br>
+                    <input type="text" id="text-fields-last-name"
+                    placeholder="Doe" value="Jose Annunziato"/></br>
+                    <label for="select-one-genre">
+                        Pronouns:
+                        </label></br>
+                        <select id="select-one-genre">
+                        <option value="COMEDY">None</option>
+                        <option value="DRAMA">She/her</option>
+                        <option selected value="SCIFI">He/His</option>
+                        <option value="FANTASY">They/Them</option>
+                        <option value="FANTASY">She/Them</option>
+                        </select></br>
+                        <label for="text-fields-username">Title:</label></br>
+                        <input id="text-fields-username" placeholder="Student"/><br/></br>
+                        <h3>Contact</h3>
+                        <p>No registered services, you can add some on the <a href="#">settings </a>page.</p>
+                        <h3>Biography</h3>
+                        <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
+                        <form id="textarea">
+                            <textarea cols="30" rows="10">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+                        </form>
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="http://www.youtube.com">YouTube</a> Links to an external site.</li>
+                        </ul>
+                        <table>
+                            <tr>
+                                <td>Title</td>
+                                <td>URL</td>
+                            </tr>
+                            <tr>
+                                <td><input type="Text" id="text-fields-name" value="Youtube"/></td>
+                                <td> →</td>
+                                <td><input type="Text" id="text-fields-name" value="http://www.youtube.com"/></td>
+                                <td><a href="#">Remove</a></td>
+                            </tr>
+                        </table>
+                        <button>Add another link</button></br>
+                        <button><a href="/Kanbas/Account/Profile/index.html">Cancel</a></button>
+                        <button><a href="/Kanbas/Account/Profile/index.html">Save Profile</a></button></br>
+                        <button><a href="/Kanbas/Account/Profile/index.html">Edit Profile</a></button>
+                        <button><a href="/Kanbas/Account/Profile/index.html">Cancel Editing</a></button>
+                </div>
+            </div>
         </div>
-        <div class="col-9">
-            <h1>Jose Annunziato</h1>
-            <label for="text-fields-last-name">Name:*</label>
-            <input type="text" id="text-fields-last-name"
-            placeholder="Doe" value="Jose Annunziato"/>
-            <label for="select-one-genre">
-                Pronouns:
-                </label>
-                <select id="select-one-genre">
-                <option value="COMEDY">None</option>
-                <option value="DRAMA">She/her</option>
-                <option selected value="SCIFI">He/His</option>
-                <option value="FANTASY">They/Them</option>
-                <option value="FANTASY">She/Them</option>
-                </select></br></br>
-            <label for="text-fields-username">Title:</label>
-            <input id="text-fields-username" placeholder="Student"/><br/></br>
-            <h3>Contact</h3>
-            <p>No registered services, you can add some on the <a href="#">settings </a>page.</p>
-            <h3>Biography</h3>
-            <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
-            <form id="textarea">
-                <textarea cols="30" rows="10">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
-            </form>
-            <h3>Links</h3>
-            <ul>
-                <li><a href="http://www.youtube.com">YouTube</a> Links to an external site.</li>
-            </ul>
-            <table>
-                <tr>
-                    <td>Title</td>
-                    <td>URL</td>
-                </tr>
-                <tr>
-                    <td><input type="Text" id="text-fields-name" value="Youtube"/></td>
-                    <td> →</td>
-                    <td><input type="Text" id="text-fields-name" value="http://www.youtube.com"/></td>
-                    <td><a href="#">Remove</a></td>
-                </tr>
-            </table>
-            <button>Add another link</button></br>
-            <button><a href="/Kanbas/Account/Profile/index.html">Cancel</a></button>
-            <button><a href="/Kanbas/Account/Profile/index.html">Save Profile</a></button></br>
-            <button><a href="/Kanbas/Account/Profile/index.html">Edit Profile</a></button>
-            <button><a href="/Kanbas/Account/Profile/index.html">Cancel Editing</a></button>
-        </div>        
+    </div>        
 </body>
 </html>

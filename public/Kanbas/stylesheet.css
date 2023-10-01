@@ -25,9 +25,7 @@ body{
     padding-right: 0;
 }
 
-.nav.second.flex-column{
-    background-color: white !important;
-}
+
 /* Style for the second list */
 .nav.second.flex-column .nav-link {
     background-color: white;
@@ -44,7 +42,7 @@ body{
     font-size: 13px;
 }
 
-.fa{
+.navbar .fa{
     color:red;
     background-color: black;
     font-size:20px;
@@ -60,20 +58,50 @@ body{
     background-color: white;
 }
 
-.fa.fa-user-circle-o{
+.fa.fa-user-circle-o {
     color:grey;
+}
+.fa.fa-pencil{
+    color:grey;
+    background:transparent;
 }
 
 .navbar.bg-light{
     display:block;
     width:85px;
-    box-sizing: unset;
-    padding:0 0 0 0;
+    padding: 0;
     height:100%;
     background-color: black !important;
+    
+    min-height: 100vh; /* Ensure the navbar takes the full height of the viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
-
-
+.navbar.second{
+    display:inline-block;
+    position:fixed;
+    width:195px;
+    padding-left:20px;
+}
+.container-fluid{
+    padding-left:0;
+}
 .col{
     padding:0 0 0 0;
+}
+
+.dashboard{
+    position: relative; 
+    width: 100%; 
+    height: 500px;
+}
+.dashboard-item{
+    padding-left:20px;
+    display: inline-block;
+}
+
+.content{
+    display: inline-block;
 }
