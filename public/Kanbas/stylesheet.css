@@ -7,6 +7,9 @@ body{
     align-items: center;
 }
 
+h1{
+    color:red;
+}
 
 .nav.first.flex-column .nav-link {
     background-color: black;
@@ -48,6 +51,10 @@ body{
     font-size:20px;
     padding-top:10px;
     text-align: center;
+    
+}
+.accordion .fa{
+    padding-right: 2px;
 }
 .fa.active{
     background-color: white;
@@ -79,9 +86,8 @@ body{
     top: 0;
     z-index: 1;
 }
-.navbar.second{
-    display:inline-block;
-    position:fixed;
+.navbar .second{
+    /*display:inline-block;*/
     width:195px;
     padding-left:20px;
 }
@@ -104,4 +110,35 @@ body{
 
 .content{
     display: inline-block;
+}
+
+.list-group-item{
+    border-style: solid;
+}
+
+.fa.fa-check-circle, .fa.fa-check-circle-o, .fa.fa-link{
+    color:green;
+}
+
+.title_page{
+    display: inline;
+}
+
+.accordion-button, .accordion-button.collaps{
+    background-color: grey;
+}
+.accordion{
+    padding-top: 10px;
+}
+
+.accordion-body{
+    border-left: solid;
+    border-left-color:green;
+}
+
+hr{
+    width:100%
+}
+.accordion-body a{
+    color:red;
 }
