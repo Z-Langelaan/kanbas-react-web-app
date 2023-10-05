@@ -34,11 +34,16 @@
             </nav>
         </div>
         <div class="col-11">
-            <h1><i class="fa fa-bars" aria-hidden="true"></i> Jose Annunziato's Profile</h1> <hr>
+            <h1 style="color:black;"><i class="fa fa-bars" aria-hidden="true" style="color:red;"></i> Jose Annunziato's Profile</h1> <hr>
             <div class="row">
                 <div class="col">
                     <nav class ="navbar">
                         <ul class="nav second flex-column">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item active" aria-current="page">20241 fall 2023 semester ...</li>
+                                </ol>
+                              </nav>
                             <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
                             <li class="nav-item"><a class="nav-link active" href="#">Profile</a></li>
@@ -53,7 +58,12 @@
                     </nav>
                 </div>
                 <div class="col-9">
-                    <h1>Jose Annunziato</h1>
+                    <button type="button" class="btn btn-light float-end">
+                        <i class="fa fa-pencil" aria-hidden="true" ></i>
+                        <a href="/Kanbas/Account/Profile/index.html" style="text-decoration:none;color:grey;">Cancel Profile</a>
+                    </button>
+                    <i class="fa fa-user-circle-o active" aria-hidden="true" style="font-size: 200px;"></i><br>
+                    
                     <label for="text-fields-last-name">Name:*</label></br>
                     <input type="text" id="text-fields-last-name"
                     placeholder="Doe" value="Jose Annunziato"/></br>
@@ -67,19 +77,17 @@
                         <option value="FANTASY">They/Them</option>
                         <option value="FANTASY">She/Them</option>
                         </select></br>
+
                         <label for="text-fields-username">Title:</label></br>
                         <input id="text-fields-username" placeholder="Student"/><br/></br>
                         <h3>Contact</h3>
-                        <p>No registered services, you can add some on the <a href="#">settings </a>page.</p>
+                        <p>No registered services, you can add some on the <a href="#" style="text-decoration:none;color:red;">settings </a>page.</p>
                         <h3>Biography</h3>
                         <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
                         <form id="textarea">
-                            <textarea cols="30" rows="10">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+                            <textarea cols="30" rows="5">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
                         </form>
-                        <h3>Links</h3>
-                        <ul>
-                            <li><a href="http://www.youtube.com">YouTube</a> Links to an external site.</li>
-                        </ul>
+                        <h3>Links</h3>                    
                         <table>
                             <tr>
                                 <td>Title</td>
@@ -89,14 +97,12 @@
                                 <td><input type="Text" id="text-fields-name" value="Youtube"/></td>
                                 <td> →</td>
                                 <td><input type="Text" id="text-fields-name" value="http://www.youtube.com"/></td>
-                                <td><a href="#">Remove</a></td>
                             </tr>
                         </table>
-                        <button>Add another link</button></br>
-                        <button><a href="/Kanbas/Account/Profile/index.html">Cancel</a></button>
-                        <button><a href="/Kanbas/Account/Profile/index.html">Save Profile</a></button></br>
-                        <button><a href="/Kanbas/Account/Profile/index.html">Edit Profile</a></button>
-                        <button><a href="/Kanbas/Account/Profile/index.html">Cancel Editing</a></button>
+                        <button type="button" class="btn btn-light">Add another link</button></br></br><hr>
+
+                        <button type="button" class="btn btn-light"><a href="/Kanbas/Account/Profile/index.html" style="text-decoration:none;color:grey;">Cancel</a></button>
+                        <button type="button" class="btn btn-danger"><a href="/Kanbas/Account/Profile/index.html" style="text-decoration:none;color:white;">Save Profile</a></button></br>
                 </div>
             </div>
         </div>

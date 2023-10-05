@@ -90,6 +90,7 @@ h1{
     /*display:inline-block;*/
     width:195px;
     padding-left:20px;
+    text-wrap:wrap;
 }
 .container-fluid{
     padding-left:0;
@@ -141,4 +142,10 @@ hr{
 }
 .accordion-body a{
     color:red;
+}
+.accordion-body .fa.fa-pencil-square-o{
+    color:green;
+}
+.table{
+    padding-top:10px;
 }
