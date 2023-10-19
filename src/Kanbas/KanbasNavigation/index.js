@@ -2,7 +2,6 @@ import '../style.css';
 import { Link, useLocation } from "react-router-dom";
 import { BiUserCircle, BiBookAlt, BiSolidCalendar, BiVideoRecording, BiLogoCreativeCommons, BiHelpCircle } from "react-icons/bi";
 import { AiOutlineDashboard, AiOutlineInbox, AiOutlineHistory } from "react-icons/ai";
-import { FaEllipsisVertical} from "react-icons/fa6";
 
 
 function KanbasNavigation() {
@@ -11,7 +10,7 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
   return (
     <div className="wd-navbar">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2V8BuW7n0uy8uY8krUGiY5bXk0LN8RZe4cw&usqp=CAU" style={{width:100, height:100}}></img>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2V8BuW7n0uy8uY8krUGiY5bXk0LN8RZe4cw&usqp=CAU" alt="Northeaster_logo" style={{width:100, height:100}}></img>
       <div className="list-group" style={{ width: 100 }}>
         {links.map((link, index) => (
           <Link
