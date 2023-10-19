@@ -1,5 +1,5 @@
 import ModuleList from "../Modules/ModuleList";
-import CourseStatus from "./CourseStatus";
+// import CourseStatus from "./CourseStatus";
 
 
 function Home() {
