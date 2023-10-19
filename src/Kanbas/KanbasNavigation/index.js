@@ -1,7 +1,13 @@
 import '../style.css';
 import { Link, useLocation } from "react-router-dom";
+import { BiUserCircle, BiBookAlt, BiSolidCalendar, BiVideoRecording, BiLogoCreativeCommons, BiHelpCircle } from "react-icons/bi";
+import { AiOutlineDashboard, AiOutlineInbox, AiOutlineHistory } from "react-icons/ai";
+import { FaEllipsisVertical} from "react-icons/fa6";
+
+
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
+  const icons = [<BiUserCircle />, <AiOutlineDashboard />, <BiBookAlt />, <BiSolidCalendar />, <AiOutlineInbox />, <AiOutlineHistory />, <BiVideoRecording />, <BiLogoCreativeCommons />, <BiHelpCircle />];
   const { pathname } = useLocation();
   return (
     <div className="wd-navbar">
@@ -12,7 +18,8 @@ function KanbasNavigation() {
             key={index}
             to={`/Kanbas/${link}`}
             className={`list-group-item ${pathname.includes(link) && "active"}`}>
-            {link}
+            {icons[index]}<br />
+            {link}    
           </Link>
         ))}
       </div>

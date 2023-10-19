@@ -2,7 +2,6 @@
 .wd-navbar{
     padding-right:10px;
     text-align: center;
-    
 }
 .wd-navbar .list-group .list-group-item{
     background-color: black;
@@ -32,3 +31,8 @@
     width: 85px;
     height:85px;
 }
+
+/* .modules .btn{
+    padding-bottom: 5px;
+    padding-right:5px;
+} */
