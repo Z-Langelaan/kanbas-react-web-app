@@ -7,7 +7,7 @@ function Home() {
     <div>
       <h2>Home</h2>
       <ModuleList />
-      <CourseStatus />
+      {/* <CourseStatus /> */}
     </div>
   );
 }

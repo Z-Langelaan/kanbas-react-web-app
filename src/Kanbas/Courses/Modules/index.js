@@ -6,7 +6,7 @@ import { AiOutlinePlus, AiOutlineCheckCircle } from "react-icons/ai";
 
 function Modules() {
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div>
