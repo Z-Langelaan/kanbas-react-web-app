@@ -32,7 +32,17 @@
     height:85px;
 }
 
-/* .modules .btn{
-    padding-bottom: 5px;
-    padding-right:5px;
-} */
+.wd-navbar .icons{
+    font-size:30px;
+}
+
+.wd-modules .wd-button{
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.wd-modules .wd-button .check{
+    display: inline-block;
+    color:greenyellow;
+}

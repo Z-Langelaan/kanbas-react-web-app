@@ -11,14 +11,16 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
   return (
     <div className="wd-navbar">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2V8BuW7n0uy8uY8krUGiY5bXk0LN8RZe4cw&usqp=CAU" style={{width:150, height:150}}></img>
-      <div className="list-group" style={{ width: 150 }}>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2V8BuW7n0uy8uY8krUGiY5bXk0LN8RZe4cw&usqp=CAU" style={{width:100, height:100}}></img>
+      <div className="list-group" style={{ width: 100 }}>
         {links.map((link, index) => (
           <Link
             key={index}
             to={`/Kanbas/${link}`}
             className={`list-group-item ${pathname.includes(link) && "active"}`}>
-            {icons[index]}<br />
+            <div className='icons'>
+              {icons[index]}<br />
+            </div>
             {link}    
           </Link>
         ))}
