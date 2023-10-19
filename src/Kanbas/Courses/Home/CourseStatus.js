@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 function CourseStatus() {
-  const navigate = useNavigate();
 
     return (
       // <div class="col-2">
