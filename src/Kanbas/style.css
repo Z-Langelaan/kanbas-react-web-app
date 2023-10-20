@@ -14,6 +14,9 @@
     color:red;
     background-color: white;
 }
+.wd-navbar .list-group .list-group-item .icons{
+    color: red;
+}
 
 .wd-navbar-second .list-group .list-group-item{
     border:none;
@@ -46,3 +49,8 @@
     display: inline-block;
     color:greenyellow;
 }
+
+.dashboard-item .card-link{
+    text-decoration: none;
+}
+
