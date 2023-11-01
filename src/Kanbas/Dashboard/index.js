@@ -9,9 +9,13 @@ import { BiEdit } from "react-icons/bi";
 function Dashboard() {
   // const courses = db.courses;
   const [courses, setCourses] = useState(db.courses);
-  const [course, setCourse] = useState({
-    name: "New Course",      number: "New Number",
-    startDate: "2023-09-10", endDate: "2023-12-15",
+  // const [course, setCourse] = useState({
+  //   name: "New Course",      number: "New Number",
+  //   startDate: "2023-09-10", endDate: "2023-12-15",
+  // });
+  const [course] = useState({
+      name: "New Course",      number: "New Number",
+      startDate: "2023-09-10", endDate: "2023-12-15",
   });
   const addNewCourse = () => {
     setCourses([...courses, { ...course, _id: new Date().getTime() }]);
