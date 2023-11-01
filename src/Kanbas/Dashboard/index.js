@@ -1,16 +1,29 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import React from "react";
+import {React, useState} from "react";
 import { Link } from "react-router-dom";
 import db from "../Database";
 import '../style.css';
 import { BiEdit } from "react-icons/bi";
 
 function Dashboard() {
-  const courses = db.courses;
+  // const courses = db.courses;
+  const [courses, setCourses] = useState(db.courses);
+  const [course, setCourse] = useState({
+    name: "New Course",      number: "New Number",
+    startDate: "2023-09-10", endDate: "2023-12-15",
+  });
+  const addNewCourse = () => {
+    setCourses([...courses, { ...course, _id: new Date().getTime() }]);
+  };
+
+
   return (
     <div>
       <h1>Dashboard</h1><hr />
+      <button onClick={addNewCourse} >
+        Add
+      </button>
       <div className="dashboard-item">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
           {courses.map((course) => (
