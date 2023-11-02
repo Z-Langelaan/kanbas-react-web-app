@@ -2,48 +2,30 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { BiEdit } from "react-icons/bi";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 
 function ModuleList() {
   const { courseId } = useParams();
-  const [modules, setModules] = useState(db.modules);
-  const [module, setModule] = useState({
-    name: "New Module",
-    description: "New Description",
-    course: courseId,
-  });
-  const addModule = (module) => {
-    setModules([
-      { ...module, _id: new Date().getTime().toString() },
-        ...modules,
-    ]);
-  };
-  const deleteModule = (moduleId) => {
-    setModules(modules.filter(
-      (module) => module._id !== moduleId));
-  };
-  const updateModule = () => {
-    setModules(
-      modules.map((m) => {
-        if (m._id === module._id) {
-          return module;
-        } else {
-          return m;
-        }
-      })
-    );
-  }
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
 
   return (
     <ul className="list-group">
       <li className="list-group-item">
         <div>
-          <button type="button" className="btn btn-secondary btn-sm" onClick={() => { addModule(module) }}>Add</button>
-          <button type="button" className="btn btn-secondary btn-sm" onClick={updateModule}>Update</button>
+          <button type="button" className="btn btn-secondary btn-sm" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+          <button type="button" className="btn btn-secondary btn-sm" onClick={() => dispatch(updateModule(module))}>Update</button>
         </div>
         <input value={module.name}
-          onChange={(e) => setModule({
-            ...module, name: e.target.value })}
+          onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
         />
         <textarea value={module.description}
           onChange={(e) => setModule({
@@ -61,14 +43,14 @@ function ModuleList() {
              <button
              type="button"
              className="btn btn-secondary btn-sm"
-              onClick={(event) => { setModule(module); }}>
+             onClick={() => dispatch(setModule(module))}>
               <BiEdit />
             </button>
 
              <button
              type="button"
              className="btn btn-sm btn-danger"
-              onClick={() => deleteModule(module._id)}>
+             onClick={() => dispatch(deleteModule(module._id))}>
               Delete
             </button>
 

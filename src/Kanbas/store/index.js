@@ -1,15 +1,12 @@
-import store from "./store";
-import { Provider } from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
+import modulesReducer from "../Courses/Modules/modulesReducer";
 
 
-function Kanbas() {
-  return (
-    <Provider store={store}>
-      <div className="d-flex">
-        <KanbasNavigation />
-      <div>
-      </div>
-    </Provider>
-  );
-}
-export default Kanbas;
+const store = configureStore({
+  reducer: {
+    modulesReducer
+  }
+});
+
+
+export default store;
