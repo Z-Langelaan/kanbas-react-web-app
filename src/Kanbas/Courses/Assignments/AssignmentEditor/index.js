@@ -20,6 +20,13 @@ function AssignmentEditor() {
       <h2>Assignment Name</h2>
       <input value={assignment.title}
              className="form-control mb-2" />
+      
+      <input value={assignment.description}
+             className="form-control mb-2" placeholder="New Assignment Description"/>
+      <label for="points">Points: </label>
+      <input value={assignment.points}
+             className="form-control mb-2" placeholder="100"/>
+      
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
             className="btn btn-danger">
         Cancel
