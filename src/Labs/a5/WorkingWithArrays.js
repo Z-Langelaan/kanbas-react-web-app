@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// const [todo, setTodo] = useState({});
 import axios from "axios";
 
 function WorkingWithArrays() {
@@ -172,11 +171,13 @@ function WorkingWithArrays() {
             Delete Todo with ID = {todo.id}
         </a>
 
-        {/* <h4>Retrieving Arrays</h4>
+        <h3>Working with Arrays</h3>
+        <h4>Retrieving Arrays</h4>
         <a href={API} className="btn btn-primary me-2">
-          Get Todos
+            Get  Complete Todos
         </a>
-        <h4>Retrieving an Item from an Array by ID</h4>
+
+        {/* <h4>Retrieving an Item from an Array by ID</h4>
         <input
             className="form-control"
             value={id}
@@ -185,18 +186,14 @@ function WorkingWithArrays() {
         <a href={`${API}/${todo.id}`}
             className="btn btn-primary me-2">
             Get Todo by ID
-        </a>
-        <h3>Filtering Array Items</h3>
-        <a href={`${API}?completed=true`}
-            className="btn btn-primary me-2" >
-            Get Completed Todos
-        </a>
-        <h4>Creating new Items in an Array</h4>
+        </a> */}
+         <h4>Creating new Items in an Array</h4>
         <a href={`${API}/create`}
             className="btn btn-primary me-2">
             Create Todo
-        </a> */}
+        </a>
 
+        
       </div>
     );
   }
