@@ -16,6 +16,7 @@ import { findModulesForCourse, createModule } from "./client";
 
 import * as client from "./client";
 function ModuleList() {
+  const dispatch = useDispatch();
   const handleDeleteModule = (moduleId) => {
     client.deleteModule(moduleId).then((status) => {
       dispatch(deleteModule(moduleId));
@@ -23,12 +24,13 @@ function ModuleList() {
   };
 
   const { courseId } = useParams();
+  
   useEffect(() => {
     findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
     );
-  }, [courseId]);
+  }, [courseId, dispatch]);
   
   const handleAddModule = () => {
     createModule(courseId, module).then((module) => {
@@ -37,7 +39,7 @@ function ModuleList() {
   };
 
   const handleUpdateModule = async () => {
-    const status = await client.updateModule(module);
+    await client.updateModule(module);
     dispatch(updateModule(module));
   };
 
@@ -45,7 +47,7 @@ function ModuleList() {
 
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
-  const dispatch = useDispatch();
+  
 
   return (
     <ul className="list-group">
