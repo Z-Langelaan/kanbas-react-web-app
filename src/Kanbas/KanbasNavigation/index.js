@@ -5,7 +5,7 @@ import { AiOutlineDashboard, AiOutlineInbox, AiOutlineHistory } from "react-icon
 
 
 function KanbasNavigation() {
-  const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help", "signin"];
+  const links = ["account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help", "signin", "signup"];
   const icons = [<BiUserCircle />, <AiOutlineDashboard />, <BiBookAlt />, <BiSolidCalendar />, <AiOutlineInbox />, <AiOutlineHistory />, <BiVideoRecording />, <BiLogoCreativeCommons />, <BiHelpCircle />];
   const { pathname } = useLocation();
   return (

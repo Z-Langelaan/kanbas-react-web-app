@@ -1,16 +1,39 @@
 import * as client from "./client";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 function Account() {
-  const [account, setAccount] = useState(null);
+  const { id } = useParams();
   const navigate = useNavigate();
+  const [account, setAccount] = useState(null);
+  const findUserById = async (id) => {
+    const user = await client.findUserById(id);
+    setAccount(user);
+  };
+
+  // const navigate = useNavigate();
   const fetchAccount = async () => {
     const account = await client.account();
     setAccount(account);
   };
+  const save = async () => {
+    await client.updateUser(account);
+  };
+  const signout = async () => {
+    await client.signout();
+    navigate("/Kanbas/signin");
+  };
+
+
   useEffect(() => {
-    fetchAccount();
-  }, []);
+    if (id) {
+      findUserById(id);
+    } else {
+      fetchAccount();
+    }
+  }, [id]);
+
   return (
     <div className="w-50">
       <h1>Account</h1>
@@ -38,6 +61,15 @@ function Account() {
             <option value="FACULTY">Faculty</option>
             <option value="STUDENT">Student</option>
           </select>
+          <button onClick={save}>
+            Save
+          </button>
+          <button onClick={signout}>
+            Signout
+          </button>
+          <Link to="/Kanbas/admin/users" className="btn btn-warning w-100">
+            Users
+          </Link>
         </div>
       )}
     </div>
