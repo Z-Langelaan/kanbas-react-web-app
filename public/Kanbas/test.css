@@ -1,0 +1,62 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container for the layout */
+.container {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Keep the navigation bar fixed */
+.navbar {
+    background-color: #f4f4f4; /* Set your desired background color */
+    padding: 20px;
+    width: 100px; /* Adjust the width as needed */
+    min-height: 100vh; /* Ensure the navbar takes the full height of the viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* Style the list items */
+.navbar .nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar .nav-list li {
+    margin-bottom: 10px;
+}
+
+/* Style the icons and links */
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Set your desired text color */
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    background-color: #ccc; /* Set your desired hover background color */
+}
+
+/* Content area */
+.content {
+    flex-grow: 1;
+    margin-left: 120px; /* Adjust the margin as needed */
+}
+
+/* Style the sections */
+section {
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}

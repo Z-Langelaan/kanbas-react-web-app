@@ -1,0 +1,157 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav.nav-item{
+    display:flex;
+    align-items: center;
+}
+
+h1{
+    color:red;
+}
+
+.nav.first.flex-column .nav-link {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-left: 0;
+    font-size: 13px;
+    padding-right: 0;
+}
+
+.nav.first.flex-column .nav-link.active {
+    background-color: white;
+    color: red;
+    padding-left: 0;
+    font-size: 13px;
+    padding-right: 0;
+}
+
+
+/* Style for the second list */
+.nav.second.flex-column .nav-link {
+    background-color: white;
+    color: red;
+    text-align: left;
+    font-size: 13px;
+}
+
+.nav.second.flex-column .nav-link.active {
+    background-color: white;
+    color: black;
+    border-left: 2px solid black; /* Add a black border to the left */
+    padding-left: 10px; /* Adjust padding for spacing */
+    font-size: 13px;
+}
+
+.navbar .fa{
+    color:red;
+    background-color: black;
+    font-size:20px;
+    padding-top:10px;
+    text-align: center;
+    
+}
+.accordion .fa{
+    padding-right: 2px;
+}
+.fa.active{
+    background-color: white;
+}
+
+.fa-pencil-square-o{
+    color:black;
+    background-color: white;
+}
+
+.fa.fa-user-circle-o {
+    color:grey;
+}
+.fa.fa-pencil{
+    color:grey;
+    background:transparent;
+}
+
+.navbar.bg-light{
+    display:block;
+    width:85px;
+    padding: 0;
+    height:100%;
+    background-color: black !important;
+    
+    min-height: 100vh; /* Ensure the navbar takes the full height of the viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.navbar .second{
+    /*display:inline-block;*/
+    width:195px;
+    padding-left:20px;
+    text-wrap:wrap;
+}
+.container-fluid{
+    padding-left:0;
+}
+.col{
+    padding:0 0 0 0;
+}
+
+.dashboard{
+    position: relative; 
+    width: 100%; 
+    height: 500px;
+}
+.dashboard-item{
+    padding-left:20px;
+    display: inline-block;
+}
+
+.content{
+    display: inline-block;
+}
+
+.list-group-item{
+    border-style: solid;
+}
+
+.fa.fa-check-circle, .fa.fa-check-circle-o, .fa.fa-link{
+    color:green;
+}
+
+.title_page{
+    display: inline;
+}
+
+.accordion-button, .accordion-button.collaps{
+    background-color: grey;
+}
+.accordion{
+    padding-top: 10px;
+}
+
+.accordion-body{
+    border-left: solid;
+    border-left-color:green;
+}
+
+hr{
+    width:100%
+}
+.accordion-body a{
+    color:red;
+}
+.accordion-body .fa.fa-pencil-square-o{
+    color:green;
+}
+.table{
+    padding-top:10px;
+}
+
+.card.dashboard-card{
+    margin-right:30px;
+    width:260px;
+    display:block;
+}

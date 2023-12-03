@@ -1,0 +1,59 @@
+
+.wd-navbar{
+    padding-right:10px;
+    text-align: center;
+}
+.wd-navbar .list-group .list-group-item{
+    background-color: black;
+    color: white;
+    border:none;
+    border-radius:0%; 
+}
+
+.wd-navbar .list-group .list-group-item.active{
+    color:red;
+    background-color: white;
+}
+.wd-navbar .list-group .list-group-item .icons{
+    color: red;
+}
+
+.wd-navbar-second .list-group .list-group-item{
+    border:none;
+    color:red;
+    border-radius:0%;
+}
+
+.wd-navbar-second .list-group .list-group-item.active{
+    color:black;
+    background-color: white;
+    border-left: 2px solid black;
+}
+
+.wd-navbar .img{
+    width: 85px;
+    height:85px;
+}
+
+.wd-navbar .icons{
+    font-size:30px;
+}
+
+.wd-modules .wd-button{
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.wd-modules .wd-button .check{
+    display: inline-block;
+    color:greenyellow;
+}
+
+.dashboard-item .card-link{
+    text-decoration: none;
+    color:black;
+}
+
+
+
